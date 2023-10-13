@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Banco Remasterizado </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+
+<body>
+
+    <div class = "mensajecajero">
+        
+        <h2> ¿Qué operación quieres realizar? </h2>
+
+    </div>
+
+    <div class = formCajero>
+
+        <form id="SesionCajero">
+                
+            <div class="mb-3">
+                <label for="emailCajero" class="form-label"> Selecciona tu nombre por favor. Lamento las molestias que esto pueda generarte </label>
+                <select name="seleccionarMail" id="emailCajero">
+                    <option value="luz@gmail.com"> Luz </option>
+                    <option value="pau@gmail.com"> Pau </option>
+                    <option value="aimee@gmail.com"> Amy </option>
+                    <option value="enrique@gmail.com"> Enrique </option>
+                    <option value="mina@gmail.com"> Mina </option>
+
+                </select>
+
+            </div>
+    </div>
+
+
+    <section class = "ctn-btnOpe">
+
+        <section class = "ctn-individual">
+            <button type ="button" class="btnOpe" onclick="consultarSaldo(event)">Consultar Saldo </button>
+
+        </section>
+
+        <section class = "ctn-individual" >
+            <button type ="button" class="btnOpe" onclick="ingresarMonto(event)">Ingresar Monto </button>
+ 
+        </section>
+
+        <section class = "ctn-individual">
+            <button type ="button" class="btnOpe" onclick="retirarMonto(event)">Retirar Monto </button>
+
+        </section>
+
+
+    </section>
+
+    <div id = "resultadosOperacion" class="resultadoOp"> </div>
+
+
+    <Section class = teclado-botones>
+
+        <section class = teclado>
+
+            <p> Teclado decorativo. No sirve :/</p>
+    
+        </section>
+    
+        <Div class = "bigcontenedor">
+    
+            <section class = "contenedorbtn">
+    
+                <div>
+                    <div class="btn">1</div>
+                    <div class="btn">2</div>
+                    <div class="btn">3</div>
+                </div>
+            
+                <div>
+                    <div class="btn">4</div>
+                    <div class="btn">5</div>
+                    <div class="btn">6</div>
+                </div>
+            
+                <div>
+                    <div class="btn">7</div>
+                    <div class="btn">8</div>
+                    <div class="btn">9</div>
+                </div>
+            
+                <div>
+                    <div class="btn">Atrás</div>
+                    <div class="btn">0</div>
+                    <div class="btn">Borrar</div>
+                </div>
+            
+        
+            </section>
+        
+    
+    
+        </Div>
+
+
+
+    </Section>
+
+    
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
